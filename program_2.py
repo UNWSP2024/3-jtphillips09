@@ -4,13 +4,34 @@
 # If the person is older than 1 year, but younger than 13 years, it should display "child".
 # If the person is at least 13 years old, but less than 20 years old, it should display "teenager".
 # If the person is at least 20 year old, it should display "adult".
+#FUNCTION categorize_age(age):
+    #IF age <= 1 THEN
+        #SET ageCategory = "infant"
+    #ELSE IF age < 13 THEN
+        #SET ageCategory = "child"
+    #ELSE IF age < 20 THEN
+        #SET ageCategory = "teenager"
+    #ELSE
+        #SET ageCategory = "adult"
+    #END IF
+    
+    #RETURN ageCategory
+#END FUNCTION
+
 
 def categorize_age(age):
     ageCategory = "TBD"
     ######################
     # WRITE YOUR CODE HERE
     ######################
-
+    if age <= 1:
+        ageCategory = "infant"
+    elif age <13:
+        ageCategory = "child"
+    elif age <20: 
+        ageCategory = "teenager"
+    else:
+        ageCategory = "adult"
 
     return ageCategory
 

@@ -1,0 +1,14 @@
+FUNCTION categorize_age(age):
+    IF age <= 1 THEN
+        SET ageCategory = "infant"
+    ELSE IF age < 13 THEN
+        SET ageCategory = "child"
+    ELSE IF age < 20 THEN
+        SET ageCategory = "teenager"
+    ELSE
+        SET ageCategory = "adult"
+    END IF
+    
+    RETURN ageCategory
+END FUNCTION
+
